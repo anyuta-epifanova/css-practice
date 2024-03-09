@@ -366,3 +366,20 @@ body:hover .modal {
 .modal_text {
   clear: both;
 }
+
+.blog {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media all and (max-width: 800px) {
+  .blog {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media all and (max-width: 600px) {
+  .blog {
+    grid-template-columns: 1fr;
+  }
+}
